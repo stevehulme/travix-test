@@ -4,12 +4,12 @@ import com.travix.medusa.busyflights.domain.busyflights.BusyFlightsRequest;
 import com.travix.medusa.busyflights.domain.busyflights.BusyFlightsResponse;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
+import java.util.stream.Stream;
 
 @Component
 public class ToughJetSupplier implements SupplierSearch {
     @Override
-    public List<BusyFlightsResponse> getFlights(BusyFlightsRequest busyFlightsRequest) {
+    public Stream<BusyFlightsResponse> getFlights(BusyFlightsRequest busyFlightsRequest) {
         return null;
     }
 }

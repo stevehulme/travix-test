@@ -21,7 +21,7 @@ public class SearchFlightsService {
 
     public Stream<BusyFlightsResponse> findFlights(BusyFlightsRequest busyFlightsRequest) {
        return supplierSearches.parallelStream()
-               .flatMap(supplierSearch -> supplierSearch.getFlights(busyFlightsRequest).stream())
+               .flatMap(supplierSearch -> supplierSearch.getFlights(busyFlightsRequest))
                .sorted(Comparator.comparingDouble(BusyFlightsResponse::getFare));
     }
 }
