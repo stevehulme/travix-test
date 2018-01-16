@@ -1,12 +1,14 @@
 package com.travix.medusa.busyflights.adapter.crazyair;
 
+import com.travix.medusa.busyflights.adapter.ToResponseAdapter;
 import com.travix.medusa.busyflights.domain.busyflights.BusyFlightsResponse;
+import com.travix.medusa.busyflights.domain.crazyair.CrazyAirResponse;
 import org.springframework.stereotype.Component;
 
-@Component
-public class CrazyAirToResponse {
+public class CrazyAirToResponse implements ToResponseAdapter<CrazyAirResponse> {
 
-    public BusyFlightsResponse adapt(CrazyAirToResponse crazyAirToResponse) {
+    @Override
+    public BusyFlightsResponse adapt(CrazyAirResponse supplierResponse) {
         return null;
     }
 }

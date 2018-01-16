@@ -1,6 +1,8 @@
 package com.travix.medusa.busyflights.domain.toughjet;
 
-public class ToughJetRequest {
+import com.travix.medusa.busyflights.domain.SupplierRequest;
+
+public class ToughJetRequest implements SupplierRequest{
 
     private String from;
     private String to;
